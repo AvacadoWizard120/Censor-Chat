@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "censor_chat",
+  "version": "${version}",
+  "name": "Censor Chat",
+  "description": "Mod made for zKayJ to censor the chat when he's playing on servers",
+  "authors": [
+    "Eden Urias (ConfusingFool93",
+    "AvacadoWizard120)"
+  ],
+  "contact": {
+    "website": "https://www.youtube.com/@ConfusingFool93",
+    "repo": "https://github.com/edenj/Censor Chat"
+  },
+  "license": "MIT",
+  "icon": "assets/censor_chat/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.confusingfool.censor_chat.client.CensorChatClient"
+    ],
+    "main": [
+      "com.confusingfool.censor_chat.CensorChat"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.7",
+    "fabric": "*",
+    "minecraft": ">=1.20"
+  },
+  "mixins": [
+    "mixins.censor_chat.mixin.json"
+  ]
+}
