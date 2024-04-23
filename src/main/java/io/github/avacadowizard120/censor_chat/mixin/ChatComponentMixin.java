@@ -12,7 +12,7 @@ import org.w3c.dom.Text;
 public class ChatComponentMixin
 {
     @Inject(method = "addMessage(Lnet/minecraft/network/chat/Component;)V", at = @At("HEAD"), cancellable = true)
-    private void onAddMessage(Component p_93786_, CallbackInfo ci)
+    private void onAddMessage(Component pChatComponent, CallbackInfo ci)
     {
 
     }
