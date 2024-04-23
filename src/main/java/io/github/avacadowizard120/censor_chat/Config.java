@@ -34,4 +34,16 @@ public class Config
         replaceWith = builder.define("replace_with", "*");
         repeatChar = builder.defineInRange("repeat_char", 1, 1, 100);
     }
+
+    public static Boolean containsBlacklistedWord(String message)
+    {
+        for (String word : blacklist.get())
+        {
+            if (message.contains(word))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
 }
