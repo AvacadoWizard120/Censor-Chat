@@ -1,10 +1,7 @@
 package io.github.avacadowizard120.censor_chat;
 
-import net.minecraftforge.common.ForgeConfig;
 import net.minecraftforge.common.ForgeConfigSpec;
-import net.minecraftforge.registries.ForgeRegistries;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
